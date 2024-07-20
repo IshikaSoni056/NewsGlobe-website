@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+.box{
+    transition: all 0.3s ease;
+}
+
+.box:hover{
+    transform: translateY(-4px);
+}
+.bigb{
+    transition: all 0.3s ease;
+}
+
+.bigb:hover{
+    transform: translateY(-8px);
+}
+.box2{
+    transition: all 0.3s ease;
+}
+
+.box2:hover{
+    transform: translateY(-8px);
+}
+.rect{
+    transition: all 0.3s ease;
+}
+
+.rect:hover{
+    transform: translateY(-8px);
+}
+/* .pic{
+    background-image: url(download.png);
+    width: 72;
+    height: 48;
+    background-size: cover;
+    
+}
+.const3{
+    display: flex;
+    flex-wrap: wrap ;
+} */
+.hover_link{
+    cursor:pointer;
+  }
+
+.hover_link:hover{
+    color: yellow;
+}
+.news:hover{
+    color: yellow;
+}
+.nav_item.active{
+    color: rgb(211, 211, 155);
+}
+
+.nav{
+    position: sticky;
+    top:0;
+}
+

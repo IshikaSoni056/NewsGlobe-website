@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="download.png" type="x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewsGlobe</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="bg-gray-200">
+    <nav >
+          <div class="navbar min-w-max h-16 bg-black text-white flex items-center justify-between md:justify-around ">
+            <div class="menu lg:hidden" id="menu">
+                <button class="flex items-center px-3 py-2 border rounded text-white border-black hover:text-gray-200 hover:border-gray-200" onclick="toggleMenu()">
+                    <i class="fas fa-bars  fa-lg p-2"></i>
+                </button>
+
+            </div>
+            <div class="in flex mr-8">
+            <div class="icon text-2xl pt-3 pl-10"><i class="fa-regular fa-newspaper"></i></div>
+            <div class="news text-white font-bold text-2xl
+              py-3 pl-3"><a href="#" onclick="reload() ">NEWS</a> </div>
+            </div>
+             <div class="links text-white mr-8 absolute lg:static -top-full left-0 lg:left-auto w-full lg:w-auto h-72 lg:h-auto pl-16 text-lg font-bold pt-6 lg:pl-0 lg:flex lg:items-center lg:gap-8 transition-all duration-300 max-lg:bg-black lg:pb-5"
+             id="nav-links">
+                <ul class="flex  flex-col gap-4 lg:flex-row  lg:gap-8 ">
+                    <li class="hover_link nav_item" id="Entertainment" ><a href="#" onclick="reload()">Home</a> </li>
+                    <li class="hover_link nav_item" id="Cricket" onclick="onNavItemClick('Cricket')">Cricket</li>
+                    <li class="hover_link nav_item" id="Politics" onclick="onNavItemClick('Politics')">Politics</li>
+                    <li class="hover_link nav_item" id="Education" onclick="onNavItemClick('Education')">Education</li>
+                    <li class="hover_link nav_item" id="Finance" onclick="onNavItemClick('Finance')">Finance</li>
+                   
+                </ul>
+ 
+             </div>
+             <div class="search flex">
+                <input type="text" class="news-input bg-white rounded-sm text-black h-8 p-1" placeholder="  Enter search item" id="input">
+                <button id="button" class="btn text-black bg-zinc-300 ml-2 w-10 rounded-sm cursor-pointer hover:bg-yellow-400 font-sans p-1" ><i class="fa-solid fa-magnifying-glass"></i></button>
+             </div>
+             
+            
+            
+        </div>
+    </nav>
+
+
+
+    <main>
+  <div class="cont2 container mt-11  flex flex-wrap pl-12 overflow-hidden" id="cont2">  
+</div>
+   </main>
+    <template id="newscard">
+        <div class="rect w-80 min-h-max bg-white m-4 rounded-md">
+            <div class="pic w-80 h-40 ">
+                <img src="download.png" class="w-full h-full rounded-t-md" alt="" id="news-img">
+            </div>
+                <div class="text p-4">
+                    <h5 id="news-title" class="news-title text-lg font-bold leading-6 ">sports</h5>
+                    <h6 id="news-source" class="news-source text-xs text-zinc-500 mt-1 "><b>news headlines</b></h6>
+                    <p id="news-desc" class="news-desc text-gray-700 leading-5 mt-2  " >date</p>
+                </div>
+            </div>      
+    </template>
+   <script src="script.js"></script> 
+</body>
+</html>
